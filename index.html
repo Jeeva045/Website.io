@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: nuem;
+        src: url(NeueMachina-Ultrabold.otf);
+    }
+    *{
+        margin: 0;
+       
+    }
+    .container
+    {
+       
+        text-align: center;
+        background-color: #1c0b25;
+        background-attachment: fixed;
+        height: 142vh;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color:white;
+        flex-direction: column;
+        overflow-x: hidden;
+     
+    
+    }
+    .txt{
+        height:550px;
+        width:820px;
+        text-align: center;
+        color: wheat;
+        border: 0px solid white;
+        margin-top: 155px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .txt h1{
+        font-family: nuem;
+        color:rgb(236, 232, 224);
+        font-size: 5.25em;
+        line-height: normal;
+        line-height: 110%;
+        height: 225px;
+        border: 0px solid white;
+    }
+    .txt h2{
+        font-size: 1.4em;
+        font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+        font-weight: 1;
+        color:rgb(238, 236, 233);
+    }
+    .txth3{
+        border: 0px solid white;
+        width:540px;
+     
+    }
+    .top{
+        font-family: nuem;
+        font-size: 0.95em;
+        margin-top: 10px;
+        color:rgb(228, 227, 224);
+    }
+    .txt button{
+        margin-top: 40px;
+        background-color:#ff879f;
+        border: 5px solid white; 
+  outline: 5px solid #1c0b25;
+  outline-offset: -10px; 
+      
+ 
+  transition: outline-offset 0.6s;
+
+       font-size: 1.15em;
+       font-weight: bolder;
+       color: white;
+       width:235px;
+       padding: 18px;
+       border-radius: 40px;
+       font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+    }
+   .txt button:hover{
+   outline-offset: 0px;
+    border-color:#1c0b25;
+    outline-color:#1c0b25;
+    
+   }
+   .dummy{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 0px solid white;
+     width:100%;
+    height:450px;
+    background-attachment: fixed;
+    
+   }
+   .container2{
+    width:100%;
+    height:450px;
+    transform: translateX(0px);
+    border: 0px solid white;
+    overflow:visible;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-attachment: fixed;
+    overflow-x:visible ;
+  
+    
+  animation: example 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: translate 1s;
+
+    
+    
+   }
+   .container2 img{
+    height:400px;
+    width:400px;
+    border-radius: 8px;
+    margin-right: 15px;
+    opacity: 80%;
+    
+   
+   }
+   .container3{
+    height: 780vh;
+    background-color: rgb(245, 245, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   }
+   .container3 h1,.container3 h2{
+    font-family: nuem;
+
+
+   }
+   .container3 h1{
+    font-size: 2.8em;
+    margin-left: 50px;
+   }
+   .container3 p{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+   }
+   .rightxt{
+    background-color: white;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    width:350px;
+    padding: 50px;
+
+    height:120px;
+  
+    text-align: left;
+   }
+   .rightxt p{
+    font-size: 1.1em;
+   }
+   .txt2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-direction: row;
+    border:0px solid black;
+    margin-top: 60px;
+
+   }
+   .left{
+    margin-right: 100px;
+    border:0px solid black;
+    width:450px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   }
+   .left p{
+    font-size: 1.4em;
+    margin-left: 52px;
+   }
+   .txt2 p{
+    margin-top: 17px;
+    font-weight: 1;
+    
+    color: rgb(109, 109, 109);
+   }
+   @keyframes example {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-2200px);
+    }
+    
+   }
+   .txt3{
+    margin-top: 80px;
+    background-color: #fbc3c3;
+    text-align: center;
+    height:220px;
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    border-radius: 40px;
+
+   }
+   .txt3 h2{
+    font-size: 1.8em;
+   
+
+   }
+   .h1l{
+    width:80%;
+    border:0px solid black;
+    text-align: left;
+    margin-bottom: 20px;
+
+   }
+   .txt3 p,.txt5 p{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-weight: 1;
+font-size: 1.1em;
+
+   }
+   .txt3 img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+   }
+   .pl{
+    display: flex;
+    flex-direction: row;
+   }
+   .txt4{
+    text-align: center;
+    width:80%;
+    height:200px;
+    margin-top: 80px;
+   }
+   .txt4 p{
+    font-weight: 1;
+    font-size: 1.3em;
+    margin-top: 12px;
+    margin-left: 50px;
+   }
+   .txt5{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   }
+   .txt5right{
+    margin-right: 20px;
+   }
+   .txt5 p{
+    margin-top: 10px;
+   }
+   .txt5 .rightxt{
+    display: flex;
+    flex-direction: row;
+   }
+   .txt5 img{
+    height: 50px;
+    width:50px;
+    margin-right: 15px;
+   }
+   .container6{
+    
+    /* width:100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 20px;
+   }
+   .white{
+    
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+   }
+   .white .left{
+  
+    border:0px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: left;
+   flex-direction: column;
+   
+  
+    height: 800px;
+    
+   }
+   .white .left p{
+    margin-top: 10px;
+    font-weight: 1;
+
+   }
+   .left button,.left11 button{
+    margin-right: 130px;
+    margin-top: 30px;
+        background-color:#ff879f;
+        border: 5px solid #1c0b25; 
+  outline: 5px solid white;
+  outline-offset: -10px; 
+      
+ 
+  transition: outline-offset 0.6s;
+
+       font-size: 1.15em;
+       font-weight: bolder;
+       color: white;
+       width:235px;
+       padding: 18px;
+       border-radius: 40px;
+       font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+   }
+   .left button:hover,.left11 button:hover{
+    outline-offset: 0px;
+    border-color:white;
+    outline-color: white;
+    
+
+   }
+   .bottom{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 60px;
+   }
+   .bottom1,.bottom2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   }
+   .bottom1 img,.bottom2 img{
+    height:80px;
+    width:80px;
+    margin-bottom: 5px;
+
+   }
+   .bottom1 h2,.bottom2 h2{
+    font-weight: 1;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 90px;
+
+   }
+   .bottom1{
+    margin-right: 100px;
+   }
+ .white .left h1,.white .left p,.white .left button{
+    margin-left: 80px;
+ }
+   .container7{
+    margin-top: 100px;
+    width:100%;
+    height:450px;
+    transform: translateX(0px);
+    border: 0px solid white;
+    /* overflow-x:hidden; */
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s ;
+			animation-iteration-count: infinite ;
+			animation-name: circle ;
+			animation-timing-function: linear ;
+    
+          
+    
+   }
+   .container7 img{
+    height:400px;
+    width:400px;
+    border-radius: 8px;
+    margin-right: 15px;
+    opacity: 100%;
+    
+
+   
+    
+   }
+   .topc{
+    display: flex;
+    flex-direction: row;
+    overflow-x:hidden;
+    white-space: nowrap ;
+   
+
+   }
+   @keyframes circle{
+        from{
+            
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    .reveal{
+    transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+  opacity: 1;
+
+}
+body{
+    overflow-x: hidden;
+}
+.b{
+    
+    width:100px;
+    height:100px;
+    
+    position: absolute;
+   right: 10%;
+   top:10%;
+ 
+   
+    
+    
+}
+.reveal1{
+    opacity: 0;
+  transition: all 1s ease;
+
+}
+.reveal1.active{
+    opacity: 1;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.container8 .txt4{
+    text-align: center;
+    width:100%;
+    height:100px;
+    margin-top: 80px;
+    /* border:solid; */
+}
+.container8{
+    height: 1000px;
+    width:100%;
+    display: flex;
+    
+    justify-content: center;
+        align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+@keyframes big {
+    from{
+        width:0px;
+        height:0px;
+    }
+    to{
+        width:100px;
+        height:100px;
+    }
+    
+}
+.container8 .full{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+    }
+.container8 .top{
+        width:230px;
+        height:60px;
+        background:linear-gradient(to right,white 50%,black 50%);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+  .container8 .left{
+        /* border:solid white; */
+        width:110px;
+        height:60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: azure;
+        text-align: center;
+        position: absolute;
+        left:0;
+
+    }
+  .container8 .right{
+        /* border:solid white; */
+        width:110px;
+        height:60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: azure;
+        text-align: center;
+        position: absolute;
+        right:0;
+
+    }
+    #lefth{
+        color: black;
+       
+    }
+    #righth{
+        color:white;
+    }
+    .container8 h3,li{
+        font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-weight: 1;
+font-size: 1.1em;
+    }
+    .card{
+        /* height:800px;
+    width:82%; */
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    opacity: 1;
+    padding-bottom: 30px;
+    }
+    .left11{
+        width:430px;
+        /* border:solid; */
+        display: flex;
+    flex-direction: column;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+    .line{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .line h3{
+        margin-right: 20px;
+        
+    }
+    .left11 h3,li{
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    .left11 button{
+        width:350px;
+    }
+    /* .left11 button{
+        margin-top: 40px;
+        background-color:#ff879f;
+        border: 5px solid white; 
+  outline: 5px solid #1c0b25;
+  outline-offset: -10px; 
+      
+ 
+  transition: outline-offset 0.6s;
+
+       font-size: 1.15em;
+       font-weight: bolder;
+       color: white;
+       width:235px;
+       padding: 18px;
+       border-radius: 40px;
+       font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+    } */
+    @media screen and (max-width: 1000px){
+        .card,.white,.txt5,.txt2{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+        }
+        .card{
+            width: 92%;
+        }
+        .container8{
+            margin-top: 250px;
+        }
+        .txt3{
+            width:100%;
+            height:500px;
+        }
+        .txt2 .left{
+            margin-bottom: 50px;
+
+        }
+        .txt,.txth3{
+            width:90%;
+        }
+        .txt h1{
+            font-size: 3.1em;
+        }
+        .rightxt{
+            width: 70%;
+            overflow: hidden;
+           
+        }
+        .container8 .full{
+            margin-top: 70px;
+        }
+        .container6{
+            width: 90%;
+        }
+        #def{
+        margin-top: 680px;
+    }
+    .container8{
+        margin-bottom: 300px;
+    }
+
+    }
+    @media screen and (max-width: 600px){
+        .rightxt{
+            width: 70%;
+            overflow: hidden;
+            height:200px;
+           
+        }
+        .txt3{
+            width:100%;
+            height:700px;
+        }
+        .txt3 h2, .txt3 p{
+            font-size: 1.3em;
+        }
+        .white .left{
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .txt2 .left{
+          
+            margin-right: 10px;
+        }
+        .container6,.white{
+            width: 90%;
+        }
+
+    }
+    .red{
+        background-color:white;
+        border-radius: 30px;
+        padding: 30px;
+        border-radius: 10px;
+        width:80%;
+        display: flex;
+        justify-content: center;
+      
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .click-count{
+        display: none;
+    }
+    .hello p{
+        opacity: 1;
+        transition: opacity 2s;
+    }
+    .hello p:focus{
+        animation: click 1s ease-in-out;
+    }
+    @keyframes click {
+from{
+    opacity: 0;
+}        
+to{
+    opacity:1;
+}
+    }
+    .con{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        
+       
+    }
+    img{
+        width:30px;
+        height: 30px;
+     
+    }
+    .red h1{
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-weight:normal;
+    }
+    .red p{
+        margin-left: 50px;
+        margin-top: 20px;
+        font-weight: 1;
+        width:80%;
+    }
+    .hello{
+        margin-bottom: 70px;
+    }
+    .p{
+        display: none;
+    }
+    #def{
+        margin-top: 80px;
+    }
+
+</style>
+<body>
+ 
+    <div class="container ">
+        <img class="b"src="6536aae359036a1400c9662e_purple-small.svg" alt="">
+        <div class="top">
+            
+        <h2 style="z-index: 1;">DesignCraft.me</h2></div>
+        <div class="txt">
+        
+        <h1>Your on-demand <br>
+            design partner</h1>
+        <div class="txth3">
+            <h2>A design subscription service that offers top-tier  <br> talent for less cash than hiring a single designer.</h2>
+        </div><button>View Pricing</button></div>
+        <div class="dummy">
+        <div class="container2 reveal">
+            <img src="img1.jpg" alt="">
+            <img src="img2.jpg" alt="">
+            <img src="img3.jpg" alt="">
+            <img src="img4.jpg" alt="">
+            <img src="img2.jpg" alt="">
+        
+        
+        </div></div>
+    </div>
+    <div class="container3">
+        <div class="txt2">
+            <div class="left reveal">
+                <h1>Crafting a new design era</h1>
+                <p>Enjoy boundless design requests, rapid turnarounds, and embrace guaranteed satisfaction.</p>
+
+            </div>
+            <div class="right reveal">
+                <div class="rightxt">
+                  
+                   
+                    <h2>Distraction-free</h2>
+                    <p>Say goodbye to time-consuming emails, phone calls, and meetings. We collaborate exclusively inside trello.</p>
+               
+                </div>
+                <div class="rightxt">
+                    <h2>Speaking of trello
+                    </h2>
+                    <p>Everything is organized and managed inside your private and personal design board. Track active, queued, and completed tasks.</p>
+                </div>
+                <div class="rightxt">
+                    <h2>And stay organized</h2>
+                    <p>Invite as many team members as you need, with no restrictions on invitations, making collaboration with teammates a breeze.</p>
+                </div>
+            </div>
+        </div>
+        <div class="txt3 reveal">
+            <div class="h1l">
+
+          
+            <h2>Jen is a phenomenal creative strategist and <br>designer... an absolute joy to work with - and the<br>results are spectacular.</h2>
+        </div><div class="pl"> <img src="icon2.svg" alt=""><p>Julie Haddon- CMCO National Women's Soccer League</p></div>
+        </div>
+        <div class="txt4 reveal">
+            <h1>Our expertise</h1>
+            <p>How can we help?</p> </div>
+            <div class="txt5 reveal">
+                <div class="txt5right">
+                    <div class="rightxt">
+                        <div><img src="6536aae359036a1400c9662e_purple-small.svg" alt=""></div>
+                       <div> <h2>Product design</h2>
+                        <p>Crafting engaging digital interfaces that blend aesthetics with functionality to meet key business goals.</p>
+                    </div>
+                    </div>
+                    <div class="rightxt">
+                        <div><img src="6535765797cd72e2109aa9f3_orange-big.svg" alt=""></div>
+                       <div> <h2>Web development</h2>
+                        <p>Say goodbye to time-consuming emails, phone calls, and meetings. We collaborate exclusively inside trello.</p>
+                    </div>
+                    </div>
+                    <div class="rightxt">
+                        <div><img src="6533f6a6383c4338fb8b9a9a_coral-small.svg" alt=""></div>
+                       <div> <h2>
+                        Product audit</h2>
+                        <p>Say goodbye to time-consuming emails, phone calls, and meetings. We collaborate exclusively inside trello.</p>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="rightxt">
+                        <div><img src="6535765797cd72e2109aa9f3_orange-big.svg" alt=""></div>
+                       <div> <h2>Web design</h2>
+                        <p>Crafting visually stunning, high performing websites, tailored to your unique business goals</p>
+                    </div>
+                    </div>
+                    <div class="rightxt">
+                        <div><img src="6536a86cce997f122c6d4c36_blue-small.svg" alt=""></div>
+                       <div> <h2>UX planning</h2>
+                        <p>Designing intuitive user flows to enhance satisfaction and drive interaction..</p>
+                    </div>
+                    </div>
+                    <div class="rightxt">
+                        <div><img src="6536aae359036a1400c9662e_purple-small.svg" alt=""></div>
+                       <div> <h2>Consultation</h2>
+                        <p>Providing expert guidance to navigate your digital landscape and forge a path to success.</p>
+                    </div>
+                    </div>
+
+            </div>
+
+       
+
+    </div>
+    <div class="container6 reveal">
+        <div class="white">
+            <div class="left">
+                <h1>Membership
+                    benefits</h1>
+                <p>With benefits this good, why look anywhere else for design?.</p>
+                <button>View Pricing</button>
+
+            </div>
+            <div class="bottom">
+                <div class="bottom1">
+                    <div><img src="diamond.svg" alt=""><h2>Elegantly <br>
+                        crafted</h2></div>
+                        <div><img src="thunder.svg" alt=""><h2>Lightning<br>
+                            Fast</h2></div>
+                            <div><img src="agile.svg" alt=""><h2>Agile <br>
+                                collaboration</h2></div>
+        
+    
+
+                </div>
+                <div class="bottom2 ">
+                    <div><img src="flexible.svg" alt=""><h2>Flexible & <br>
+                        scalable
+                        </h2></div>
+                        <div><img src="dollar.svg" alt=""><h2>Predictable<br>
+                            pricing</h2></div>
+                            <div><img src="puzzle.svg" alt=""><h2>Exclusively<br>
+                                tailored</h2></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container7 reveal">
+        <img src="img1.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <img src="img3.jpg" alt="">
+        <img src="img4.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <img src="img1.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <img src="img3.jpg" alt="">
+        <img src="img4.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <img src="img1.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <img src="img3.jpg" alt="">
+        <img src="img4.jpg" alt="">
+        <img src="img2.jpg" alt="">
+    </div>
+    <div class="container8">
+        <div class="txt4 reveal">
+            <h1>Design Packages</h1>
+            <p>Which packages works for you?</p> </div>
+            <div class="full reveal">
+                <div class="top" id="top">
+                <div class="left" id="left">
+                    <h3 id="lefth">one-time</h3></div>
+                <div class="right" id="right">
+                    <h3 id="righth">monthly</h3>
+                </div>
+                </div>
+            </div>
+            <div class="card reveal1">
+                <div class="left11">
+                    <h2 style=" font-family: 'Montserrat', sans-serif;
+                    font-family: 'Poppins', sans-serif;color: rgb(1, 172, 240);">Single flex</h2>
+                    <h2 style=" margin-bottom: 15px;"><span style="font-size: 2em;">$1,551</span>/month</h2>
+                    <h3 class="h3text">One-time payment 30 days of unlimited <br>
+                    design services</h3>
+                    <h3>No contracts,no hourly rates</h3>
+                   <div class="line">
+                    <h3>Whats included</h3>
+                    <div style="width:220px; border-top: 2px solid black;margin-top: 13px;"></div>
+                    
+                
+            </div>
+            <ul class="utxt">
+                <li>One request at a time</li>
+                <li>48 hour average turnover</li>
+                <li>Unlimited users</li>
+                <li>Unlimited brands</li>
+                <li>Payments via credit card</li>
+            </ul>
+
+            
+
+<button class="cc1" id="cc1">Purchase now</button>
+
+                </div>
+                <div class="left11">
+                    <h2 style=" font-family: 'Montserrat', sans-serif;
+                    font-family: 'Poppins', sans-serif;color: rgb(1, 172, 240);">Double flex</h2>
+                    <h2 style=" margin-bottom: 15px;"><span style="font-size: 2em;">$1,551</span>/month</h2>
+                    <h3 class="h3text">One-time payment 30 days of unlimited <br>
+                    design services</h3>
+                    <h3>No contracts,no hourly rates</h3>
+                   <div class="line">
+                    <h3>Whats included</h3>
+                    <div style="width:220px; border-top: 2px solid black;margin-top: 13px;"></div>
+                    
+                
+            </div>
+            <ul class="utxt">
+                <li>One request at a time</li>
+                <li>48 hour average turnover</li>
+                <li>Unlimited users</li>
+                <li>Unlimited brands</li>
+                <li>Payments via credit card</li>
+            </ul>
+
+            
+
+<button class="cc1" id="cc1">Purchase now</button>
+
+                </div>
+            </div>
+
+    </div>
+    <h1 id="def">FAQS</h1>
+    <div class="red">
+        <div class="hello">
+            <div class="con">
+            <h1 class="hi">Why choose DesignCraft.me over traditional design services?
+        </h1>
+      <img class="image" src="al.png" alt=""></div>
+        <span class="click-count">1</span>
+        <p class="p"> Our flexible subscription and design sprint models eliminate fixed contracts, hourly rates, and large salaries. You choose the design package that best fits your needs, and we deliver high-quality designs without the overhead of traditional services. Every project is driven by your choice, steering clear of one-size-fits-all solutions..</p>
+        </div>
+        <div class="hello">
+            <div class="con">
+            <h1 class="hi">
+                What services do you provide?
+        </h1>
+      <img class="image" src="al.png" alt=""></div>
+        <span class="click-count">1</span>
+        <p class="p">Our specialty is creating user-focused web and app designs, informed by extensive industry knowledge. We also support your brand's growth with a suite of collateral services, from email templates and social media graphics to business cards and branding essentials.</p>
+        </div>
+        <div class="hello">
+            <div class="con">
+            <h1 class="hi">
+                How can I get started with DesignCraft.me?
+        </h1>
+      <img class="image" src="al.png" alt=""></div>
+        <span class="click-count">1</span>
+        <p class="p">It's simple. Get started by selecting a design package or scheduling a quick 15-minute call to discuss your needs. As a member, you'll have a personal task management system to submit and monitor all your requests with ease.</p>
+        </div>
+        <div class="hello">
+            <div class="con">
+            <h1 class="hi">
+                What is your communication process for projects?
+        </h1>
+      <img class="image" src="al.png" alt=""></div>
+        <span class="click-count">1</span>
+        <p class="p">We operate asynchronously, using Trello & Figma for all project communications. Updates and insights are shared via Loom videos with deliverables, ensuring clarity and continuous engagement.</p>
+    </div>
+            <div class="hello">
+                <div class="con">
+                <h1 class="hi">
+                    How quickly can I expect my designs?
+            </h1>
+          <img class="image" src="al.png" alt=""></div>
+            <span class="click-count">1</span>
+            <p class="p">Typically, designs like logos or landing pages are delivered within 48 hours. For intricate projects like design systems, branding, or mobile and web apps, we ensure ongoing progress with milestone deliveries every 36-48 hours.</p>
+            </div>
+            <div class="hello">
+                <div class="con">
+                <h1 class="hi">
+                    What if I have just one design request?
+            </h1>
+          <img class="image" src="al.png" alt=""></div>
+            <span class="click-count">1</span>
+            <p class="p">Our Design Sprint option is ideal for single, one-time projects, offering a full month of our design services with no subscription commitment. You'll receive the same high-quality expertise, and can return anytime for more projects..</p>
+            </div>
+            <div class="hello">
+                <div class="con">
+                <h1 class="hi">
+                    How do you maintain high-quality designs with multiple clients?
+            </h1>
+          <img class="image" src="al.png" alt=""></div>
+            <span class="click-count">1</span>
+            <p class="p">We carefully manage client intake to maintain a high standard of quality for all projects. Our focus is always on delivering exceptional design work, irrespective of the number of clients we serve..</p>
+            </div>
+            <div class="hello">
+                <div class="con">
+                <h1 class="hi">
+                    How does the DesignCraft.me Referral Program work?
+            </h1>
+          <img class="image" src="al.png" alt=""></div>
+            <span class="click-count">1</span>
+            <p class="p">Refer a friend to DesignCraft.me, and when they subscribe using your unique code, you get a free design week, and they get 10% off their first month! For additional details, please see our .</p>
+            </div>
+            <div class="hello">
+                <div class="con">
+                <h1 class="hi">
+                    Do you offer on-going support after a project is completed?
+            </h1>
+          <img class="image" src="al.png" alt=""></div>
+            <span class="click-count">1</span>
+            <p class="p">Absolutely! We're committed to your long-term success. Beyond the final delivery, we offer continued support for updates, troubleshooting, and further enhancements, ensuring your project's smooth and effective implementation..</p>
+            </div>
+       
+    </div>
+        
+       
+
+  
+    <script>
+        let a=document.getElementById("left")
+        let b=document.getElementById("right")
+        let c=document.getElementById("top")
+        let d=document.getElementById("lefth")
+        let e=document.getElementById("righth")
+        let reveals1=document.getElementsByClassName("cc1")
+        let reveals2=document.getElementsByClassName("h3text")
+        let count=0
+        let m=document.getElementsByClassName("utxt")
+        let k=0
+        
+       let para=document.getElementsByClassName("p")
+       
+        a.addEventListener("click",()=>
+        
+        {
+           
+            c.style.background="linear-gradient(to right,black 50%,white 50%)"
+           
+            d.style.color="white"
+            e.style.color="black"
+            for (var i=0;i<reveals1.length;i++){
+            
+            reveals1[i].innerText="Purchase now"
+            reveals1[i].style.backgroundColor=" #ff879f"
+            reveals2[i].innerHTML="One-time payment 30 days of unlimited <br> design services"
+            }
+            for (var i=0;i<m.length;i++){
+            m[i].removeChild(m[i].lastElementChild)
+    
+        
+
+
+            }
+            a.style.pointerEvents="none"
+            b.style.pointerEvents="auto"
+            
+           
+           
+
+        })
+
+        b.addEventListener("click",()=>
+        
+        {
+            c.style.background="linear-gradient(to right,white 50%,black 50%)"
+            d.style.color="black"
+            e.style.color="white"
+            for (var i=0;i<reveals1.length;i++){
+            reveals1[i].innerText="Subscribe now"
+            reveals1[i].style.backgroundColor=" rgb(1, 172, 240)"
+            reveals2[i].innerHTML="No minimum or long-term commitments <br>"
+
+            
+           
+            }
+            for (var i=0;i<m.length;i++){
+               
+                let v=document.createElement("li")
+        v.innerText="Pause or cancel anytime"
+       
+            m[i].appendChild(v)
+           
+
+           
+        }
+            
+        b.style.pointerEvents="none"
+            a.style.pointerEvents="auto"
+           
+
+        })
+       
+        window.addEventListener(
+  "scroll",
+  () => {
+    document.body.style.setProperty(
+      "--scroll",
+      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+    );
+  },
+  false
+);
+window.addEventListener("scroll",reveal);
+            var reveals=document.querySelectorAll(".reveal")
+          
+            function reveal(){
+            for (var i=0;i<reveals.length;i++){
+                var windowheight=window.innerHeight;
+                var revealtop=reveals[i].getBoundingClientRect().top;
+                var revealpoint=150;
+                if (revealtop<windowheight - revealpoint){
+                    reveals[i].classList.add("active")
+                }
+                else{
+                    reveals[i].classList.remove("active")
+                }
+            }
+        }
+        
+        var buttons = document.querySelectorAll('.con');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+let parentDiv = button.closest('.hello');
+let img=button.lastElementChild
+let m=null,v=null
+
+
+    let clickCountSpan = parentDiv.querySelector('.click-count');
+  
+    let clickCount = parseInt(clickCountSpan.innerText, 10) + 1;
+
+    clickCountSpan.innerText = clickCount;
+    if (Number( clickCountSpan.innerText)%2==0){
+        let y=document.createElement("p")
+     y.innerText=" for (var i=0;i<reveals.length;i++){ for (var i=0;i"
+     parentDiv.lastElementChild.style.display="block"
+     y.style.opacity="1"
+     count=0
+    //  clearInterval(m)
+     
+    // v= setInterval(()=>{
+    //     count+=1
+    //     if (count<271){
+
+    //     img.style.transform="rotate("+count+"deg)"
+    //     console.log("rotate("+count+"deg);")
+    //     }
+    //  },1)
+    img.src="ad.png"
+
+    }
+    else {
+        parentDiv.lastElementChild.style.display="none"
+        img.src="al.png"
+    //     count1=271
+    //     clearInterval(v)
+     
+    //     v= setInterval(()=>{
+    //     count1-=1
+    //     if (count>90){
+
+    //     img.style.transform="rotate("+count1+"deg)"
+    //     console.log("rotate("+count1+"deg);")
+    //     }
+    //  },1)
+
+        
+
+    }
+
+  });
+});
+       
+    </script>
+</body>
+</html>
